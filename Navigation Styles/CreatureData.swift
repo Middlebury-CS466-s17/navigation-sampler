@@ -24,9 +24,9 @@ struct Creature{
 
 
 private var creatureLookup: Dictionary<String, Creature> = [
-    "Dalek": Creature(label: "Exterminate!", image: nil),
-    "Cyberman" : Creature(label: "Delete!", image: nil),
-    "Auton": Creature(label: "...", image: nil)
+    "Dalek": Creature(label: "Exterminate!", image: #imageLiteral(resourceName: "dalek")),
+    "Cyberman" : Creature(label: "Delete!", image: #imageLiteral(resourceName: "cyberman")),
+    "Auton": Creature(label: "...", image: #imageLiteral(resourceName: "auton"))
 ]
 
 func getCreature(type:String)->Creature?{

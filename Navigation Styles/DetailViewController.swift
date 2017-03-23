@@ -1,5 +1,5 @@
 //
-//  CreatureViewController.swift
+//  DetailViewController.swift
 //  Navigation Styles
 //
 //  Created by Christopher Andrews on 3/23/17.
@@ -8,12 +8,31 @@
 
 import UIKit
 
-class CreatureViewController: UIViewController {
+class DetailViewController: UIViewController {
 
+    var creature:Creature?{
+        didSet{
+            updateUI()
+        }
+    }
+
+    
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
+    func updateUI(){
+        if label != nil && image != nil{
+            label!.text = creature!.label
+            image!.image = creature!.image
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        updateUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,22 +41,14 @@ class CreatureViewController: UIViewController {
     }
     
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationvc = segue.destination as? DetailViewController else{
-            fatalError("Connecting to the wrong type of view controller")
-        }
-        
-        guard let identifier = segue.identifier else{
-            fatalError("Segue had no identifier")
-        }
-        
-        destinationvc.creature = getCreature(type: identifier)
-        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
- 
+    */
 
 }

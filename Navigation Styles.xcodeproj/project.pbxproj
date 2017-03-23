@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB04E1001E84410F009F691C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04E0FF1E84410F009F691C /* DetailViewController.swift */; };
+		BB04E1021E84421F009F691C /* CreatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04E1011E84421F009F691C /* CreatureViewController.swift */; };
+		BB04E1041E8449C7009F691C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04E1031E8449C7009F691C /* PageViewController.swift */; };
+		BB04E1061E844A11009F691C /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04E1051E844A11009F691C /* PagesViewController.swift */; };
 		BB6070D31E819A5F00008AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6070D21E819A5F00008AAC /* AppDelegate.swift */; };
 		BB6070D51E819A5F00008AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6070D41E819A5F00008AAC /* ViewController.swift */; };
 		BB6070D81E819A5F00008AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6070D61E819A5F00008AAC /* Main.storyboard */; };
 		BB6070DA1E819A5F00008AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6070D91E819A5F00008AAC /* Assets.xcassets */; };
 		BB6070DD1E819A5F00008AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6070DB1E819A5F00008AAC /* LaunchScreen.storyboard */; };
 		BB6070E61E819AAD00008AAC /* CreatureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6070E51E819AAD00008AAC /* CreatureData.swift */; };
-		BB6070E81E81AC3500008AAC /* CreatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6070E71E81AC3500008AAC /* CreatureViewController.swift */; };
+		BBA403911E8462FC001D8501 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA403901E8462FC001D8501 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB04E0FF1E84410F009F691C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB04E1011E84421F009F691C /* CreatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatureViewController.swift; sourceTree = "<group>"; };
+		BB04E1031E8449C7009F691C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		BB04E1051E844A11009F691C /* PagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		BB6070CF1E819A5F00008AAC /* Navigation Styles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navigation Styles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6070D21E819A5F00008AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6070D41E819A5F00008AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +33,7 @@
 		BB6070DC1E819A5F00008AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6070DE1E819A5F00008AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB6070E51E819AAD00008AAC /* CreatureData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatureData.swift; sourceTree = "<group>"; };
-		BB6070E71E81AC3500008AAC /* CreatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatureViewController.swift; sourceTree = "<group>"; };
+		BBA403901E8462FC001D8501 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,13 @@
 			children = (
 				BB6070E41E819A6900008AAC /* Supporting files */,
 				BB6070D41E819A5F00008AAC /* ViewController.swift */,
-				BB6070E71E81AC3500008AAC /* CreatureViewController.swift */,
 				BB6070E51E819AAD00008AAC /* CreatureData.swift */,
 				BB6070D61E819A5F00008AAC /* Main.storyboard */,
+				BB04E1051E844A11009F691C /* PagesViewController.swift */,
+				BB04E1031E8449C7009F691C /* PageViewController.swift */,
+				BBA403901E8462FC001D8501 /* ContainerViewController.swift */,
+				BB04E1011E84421F009F691C /* CreatureViewController.swift */,
+				BB04E0FF1E84410F009F691C /* DetailViewController.swift */,
 			);
 			path = "Navigation Styles";
 			sourceTree = "<group>";
@@ -151,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB04E1061E844A11009F691C /* PagesViewController.swift in Sources */,
 				BB6070E61E819AAD00008AAC /* CreatureData.swift in Sources */,
-				BB6070E81E81AC3500008AAC /* CreatureViewController.swift in Sources */,
+				BBA403911E8462FC001D8501 /* ContainerViewController.swift in Sources */,
+				BB04E1021E84421F009F691C /* CreatureViewController.swift in Sources */,
+				BB04E1001E84410F009F691C /* DetailViewController.swift in Sources */,
+				BB04E1041E8449C7009F691C /* PageViewController.swift in Sources */,
 				BB6070D51E819A5F00008AAC /* ViewController.swift in Sources */,
 				BB6070D31E819A5F00008AAC /* AppDelegate.swift in Sources */,
 			);
@@ -318,6 +334,7 @@
 				BB6070E31E819A5F00008AAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
