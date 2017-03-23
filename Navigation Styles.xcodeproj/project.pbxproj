@@ -12,6 +12,8 @@
 		BB6070D81E819A5F00008AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6070D61E819A5F00008AAC /* Main.storyboard */; };
 		BB6070DA1E819A5F00008AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6070D91E819A5F00008AAC /* Assets.xcassets */; };
 		BB6070DD1E819A5F00008AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6070DB1E819A5F00008AAC /* LaunchScreen.storyboard */; };
+		BB6070E61E819AAD00008AAC /* CreatureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6070E51E819AAD00008AAC /* CreatureData.swift */; };
+		BB6070E81E81AC3500008AAC /* CreatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6070E71E81AC3500008AAC /* CreatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BB6070D91E819A5F00008AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6070DC1E819A5F00008AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6070DE1E819A5F00008AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6070E51E819AAD00008AAC /* CreatureData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatureData.swift; sourceTree = "<group>"; };
+		BB6070E71E81AC3500008AAC /* CreatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		BB6070D11E819A5F00008AAC /* Navigation Styles */ = {
 			isa = PBXGroup;
 			children = (
-				BB6070D21E819A5F00008AAC /* AppDelegate.swift */,
+				BB6070E41E819A6900008AAC /* Supporting files */,
 				BB6070D41E819A5F00008AAC /* ViewController.swift */,
+				BB6070E71E81AC3500008AAC /* CreatureViewController.swift */,
+				BB6070E51E819AAD00008AAC /* CreatureData.swift */,
 				BB6070D61E819A5F00008AAC /* Main.storyboard */,
+			);
+			path = "Navigation Styles";
+			sourceTree = "<group>";
+		};
+		BB6070E41E819A6900008AAC /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				BB6070D21E819A5F00008AAC /* AppDelegate.swift */,
 				BB6070D91E819A5F00008AAC /* Assets.xcassets */,
 				BB6070DB1E819A5F00008AAC /* LaunchScreen.storyboard */,
 				BB6070DE1E819A5F00008AAC /* Info.plist */,
 			);
-			path = "Navigation Styles";
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6070E61E819AAD00008AAC /* CreatureData.swift in Sources */,
+				BB6070E81E81AC3500008AAC /* CreatureViewController.swift in Sources */,
 				BB6070D51E819A5F00008AAC /* ViewController.swift in Sources */,
 				BB6070D31E819A5F00008AAC /* AppDelegate.swift in Sources */,
 			);
