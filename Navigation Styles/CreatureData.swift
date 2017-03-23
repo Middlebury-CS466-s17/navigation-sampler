@@ -25,7 +25,7 @@ struct Creature{
 
 private var creatureLookup: Dictionary<String, Creature> = [
     "Dalek": Creature(label: "Exterminate!", image: nil),
-    "Cyberman" : Creature(label: "Assimilate!", image: nil),
+    "Cyberman" : Creature(label: "Delete!", image: nil),
     "Auton": Creature(label: "...", image: nil)
 ]
 
